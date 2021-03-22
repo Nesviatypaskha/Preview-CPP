@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.sdk.embedinteroptypes\15.0.16\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.sdk.embedinteroptypes\15.0.16\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets')" />
+    <Import Project="$(NuGetPackageRoot)metapreview\1.1.0\build\MetaPreview.targets" Condition="Exists('$(NuGetPackageRoot)metapreview\1.1.0\build\MetaPreview.targets')" />
+    <Import Project="$(NuGetPackageRoot)clangsharp\3.8.0\build\ClangSharp.targets" Condition="Exists('$(NuGetPackageRoot)clangsharp\3.8.0\build\ClangSharp.targets')" />
+  </ImportGroup>
+</Project>

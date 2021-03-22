@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="PREVIEW-CPP.4542cffb-8b01-462f-b6e3-082a1315bcd2" Version="0.7.7" Language="en-US" Publisher="Nesviatypaskha Oleksii" />
+        <DisplayName>Preview-CPP</DisplayName>
+        <Description xml:space="preserve">Quick preview of *.c, *.cpp, *.h, *.hpp files</Description>
+        <License>resource\document\LICENSE</License>
+        <Icon>icon.png</Icon>
+        <PreviewImage>preview.png</PreviewImage>
+        <Tags>MetaPreview; MetaProject; C++; CPP; C; H; HPP; classes; types; dependencies; reverse engineering; preview; viewer</Tags>
+        <Preview>true</Preview>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Version="[14.0, 17.0)" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Version="[14.0, 17.0)" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Version="[14.0, 17.0)" Id="Microsoft.VisualStudio.Enterprise" />
+        <InstallationTarget Version="[14.0, 17.0)" Id="Microsoft.VisualStudio.IntegratedShell" />
+        <InstallationTarget Version="[14.0, 17.0)" Id="Microsoft.VisualStudio.Ultimate" />
+        <InstallationTarget Version="[14.0, 17.0)" Id="Microsoft.VisualStudio.Premium" />
+        <InstallationTarget Version="[14.0, 17.0)" Id="Microsoft.VisualStudio.VSLS" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[14.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+        <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="File" Path="libclang.dll" />
+    </Assets>
+</PackageManifest>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)metaplatform\1.0.7\build\MetaPlatform.targets" Condition="Exists('$(NuGetPackageRoot)metaplatform\1.0.7\build\MetaPlatform.targets')" />
+    <Import Project="$(NuGetPackageRoot)metapreview\1.0.5\build\MetaPreview.targets" Condition="Exists('$(NuGetPackageRoot)metapreview\1.0.5\build\MetaPreview.targets')" />
+  </ImportGroup>
+</Project>
