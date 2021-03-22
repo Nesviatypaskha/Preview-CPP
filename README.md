@@ -1,15 +1,6 @@
-![Image](https://img.shields.io/github/license/viacheslav-lozinskyi/Preview-CS)
-![Image](https://img.shields.io/github/issues/viacheslav-lozinskyi/Preview-CS)
-![Image](https://img.shields.io/github/stars/viacheslav-lozinskyi/Preview-CS)
-![Image](https://img.shields.io/github/languages/code-size/viacheslav-lozinskyi/Preview-CS)
-![Image](https://img.shields.io/badge/VS-2019-blueviolet)
-![Image](https://img.shields.io/badge/VS-2017-blueviolet)
-![Image](https://img.shields.io/badge/VS-2015-blueviolet)
+### Now you can look inside CPP file not opening it.
 
-### Now you can look inside CS file not opening it.
+Download the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NesviatypaskhaOleksii.Preview-cpp)
 
-![Image](resource/video/Presentation1.gif)
+Data visualization is based on <a href="https://marketplace.visualstudio.com/items?itemName=ViacheslavLozinskyi.MetaProject">MetaProject</a> and <a href="https://clang.llvm.org/">clang</a>
 
-Download the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ViacheslavLozinskyi.Preview-CS)
-<hr>
-Data visualization is based on <a href="https://marketplace.visualstudio.com/items?itemName=ViacheslavLozinskyi.MetaProject">MetaProject</a>
