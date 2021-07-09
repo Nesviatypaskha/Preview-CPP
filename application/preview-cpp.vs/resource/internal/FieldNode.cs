@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static cartridge.AnyPreview;
 using static resource.preview.CPP;
 
 namespace resource.preview
@@ -90,12 +89,9 @@ namespace resource.preview
         public override void print(atom.Trace context, int level, bool full)
         {
             context.
-                SetComment(m_type).
-                SetCommentHint(HINT.DATA_TYPE).
-                SetUrlLine(m_line).
-                SetUrlPosition(m_column).
-                SetUrl(Parser.m_url).
-                Send(NAME.PATTERN.VARIABLE, level, m_data_type + " " + (full ? m_full_name : m_name));
+                SetComment(m_type, HINT.DATA_TYPE).
+                SetUrl(Parser.m_url, m_line, m_column).
+                Send(atom.Trace.NAME.SOURCE.PREVIEW, atom.Trace.NAME.TYPE.VARIABLE, level, m_data_type + " " + (full ? m_full_name : m_name));
         }
     }
 }

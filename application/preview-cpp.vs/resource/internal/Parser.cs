@@ -1,15 +1,5 @@
 ﻿using ClangSharp;
-using Microsoft.VisualStudio.Shell.Interop;
-using resource.preview;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using static cartridge.AnyPreview;
-using static resource.preview.CPP;
 
 namespace resource.preview
 {
@@ -29,7 +19,7 @@ namespace resource.preview
             CXIndex index = clang.createIndex(0, 0);
             string[] arr = {"-std=c++17", "-ast-dump" };
             // -ast-dump
-            // OnlyLocalDecls 
+            // OnlyLocalDecls
             CXUnsavedFile unsavedFile;
             CXTranslationUnit translationUnit;
             // TODO: grab errors and warnings

@@ -1,44 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EnvDTE;
-using EnvDTE80;
-using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
+//using EnvDTE;
+//using EnvDTE80;
 
 namespace resource.preview
 {
     public static class Logger
     {
-        private static OutputWindowPane _loggerPane;
+        //private static OutputWindowPane _loggerPane;
 
         public static void Initialize()
         {
             // ThreadHelper.ThrowIfNotOnUIThread();
-            try
-            {
-                DTE2 dte = Package.GetGlobalService(typeof(SDTE)) as DTE2;
-                if (dte != null)
-                {
-                    _loggerPane = dte.ToolWindows.OutputWindow.OutputWindowPanes.Add("Log");
-                    _loggerPane.Activate();
-                    _loggerPane.Clear();
-                }
-            }
-            catch
-            {
-                // TODO: Add catch
-            }
+            //try
+            //{
+            //    DTE2 dte = Package.GetGlobalService(typeof(SDTE)) as DTE2;
+            //    if (dte != null)
+            //    {
+            //        _loggerPane = dte.ToolWindows.OutputWindow.OutputWindowPanes.Add("Log");
+            //        _loggerPane.Activate();
+            //        _loggerPane.Clear();
+            //    }
+            //}
+            //catch
+            //{
+            //    // TODO: Add catch
+            //}
         }
 
         public static void Log(string message)
         {
             try
             {
-                if (_loggerPane == null)
-                    Logger.Initialize();
+                //if (_loggerPane == null)
+                //    Logger.Initialize();
                 if (string.IsNullOrEmpty(message))
                     return;
                 OutputString(DateTime.Now.ToString() + ": " + message + Environment.NewLine);
@@ -53,8 +47,8 @@ namespace resource.preview
         {
             try
             {
-                if (_loggerPane == null)
-                    Logger.Initialize();
+                //if (_loggerPane == null)
+                //    Logger.Initialize();
                 if (string.IsNullOrEmpty(format))
                     return;
                 OutputString(string.Format(format, args) + Environment.NewLine);
@@ -69,18 +63,20 @@ namespace resource.preview
         {
             // TODO add timer System.Timer
             // ThreadHelper.ThrowIfNotOnUIThread("VSoutput.Logger.OutputString");
-            if (_loggerPane != null)
-            {
-                try
-                {
-                    _loggerPane.Activate();
-                    _loggerPane.OutputString(text);
-                }
-                catch (Exception)
-                {
-                    //TODO: log Exception
-                }
-            }
+            //if (_loggerPane != null)
+            //{
+            //    try
+            //    {
+            //        _loggerPane.Activate();
+            //        _loggerPane.OutputString(text);
+            //    }
+            //    catch (Exception)
+            //    {
+            //        //TODO: log Exception
+            //    }
+            //}
+            atom.Trace.GetInstance().
+                Send(atom.Trace.NAME.SOURCE.DIAGNOSTIC, atom.Trace.NAME.TYPE.INFO, 0, text);
         }
     }
 }

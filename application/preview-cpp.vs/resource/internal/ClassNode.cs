@@ -11,7 +11,6 @@ using System;
 using System.Runtime.Remoting.Activation;
 using System.Runtime.CompilerServices;
 using static resource.preview.CPP;
-using static cartridge.AnyPreview;
 
 namespace resource.preview
 {
@@ -52,12 +51,9 @@ namespace resource.preview
         public override void print(atom.Trace context, int level, bool full)
         {
             context.
-                SetComment("class").
-                SetCommentHint(HINT.DATA_TYPE).
-                SetUrlLine(m_line).
-                SetUrlPosition(m_column).
-                SetUrl(Parser.m_url).
-                Send(NAME.PATTERN.CLASS, level, (full ? m_full_name : m_name));
+                SetComment("class", HINT.DATA_TYPE).
+                SetUrl(Parser.m_url, m_line, m_column).
+                Send(atom.Trace.NAME.SOURCE.PREVIEW, atom.Trace.NAME.TYPE.CLASS, level, (full ? m_full_name : m_name));
             printChildrens(context, CXCursorKind.CXCursor_FieldDecl, level + 1, false);
             printChildrens(context, CXCursorKind.CXCursor_Constructor, level + 1, false);
             printChildrens(context, CXCursorKind.CXCursor_Destructor, level + 1, false);

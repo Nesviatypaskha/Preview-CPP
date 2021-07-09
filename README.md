@@ -2,5 +2,4 @@
 
 Download the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NesviatypaskhaOleksii.Preview-cpp)
 
-Data visualization is based on <a href="https://marketplace.visualstudio.com/items?itemName=ViacheslavLozinskyi.MetaProject">MetaProject</a> and <a href="https://clang.llvm.org/">clang</a>
-
+Data visualization is based on <a href="https://marketplace.visualstudio.com/items?itemName=ViacheslavLozinskyi.MetaOutput-2019">MetaOutput</a> and <a href="https://clang.llvm.org/">clang</a>
