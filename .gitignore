@@ -2,3 +2,4 @@
 /output
 /application/preview-cs.vs/obj
 /application/preview-cs.vs/*.user
+/application/preview-cpp.vs/obj
