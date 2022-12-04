@@ -28,7 +28,7 @@ namespace resource.package
             public const string DESCRIPTION = "Quick preview of C, CPP, H and HPP files";
             public const string GUID = "42533993-FCE3-42E5-85C5-F339A242EF10";
             public const string NAME = "Preview-CPP";
-            public const string VERSION = "0.8.5";
+            public const string VERSION = "0.8.6";
         }
 
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)

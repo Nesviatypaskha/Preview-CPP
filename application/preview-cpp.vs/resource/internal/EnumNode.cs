@@ -70,7 +70,7 @@ namespace resource.preview
             context.
                 SetComment("enum", HINT.DATA_TYPE).
                 SetUrl(Parser.m_url, m_line, m_column).
-                Send(atom.Trace.NAME.SOURCE.PREVIEW, atom.Trace.NAME.TYPE.PARAMETER, level, (full ? m_full_name : m_name));
+                Send(atom.Trace.NAME.SOURCE.PREVIEW, atom.Trace.NAME.EVENT.PARAMETER, level, (full ? m_full_name : m_name));
             printChildrens(context, CXCursorKind.CXCursor_EnumConstantDecl, level + 1, false);
         }
     }

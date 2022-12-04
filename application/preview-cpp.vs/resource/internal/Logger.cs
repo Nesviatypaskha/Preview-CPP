@@ -76,7 +76,7 @@ namespace resource.preview
             //    }
             //}
             atom.Trace.GetInstance().
-                Send(atom.Trace.NAME.SOURCE.DIAGNOSTIC, atom.Trace.NAME.TYPE.INFO, 0, text);
+                Send(atom.Trace.NAME.SOURCE.DIAGNOSTIC, atom.Trace.NAME.EVENT.INFO, 0, text);
         }
     }
 }
