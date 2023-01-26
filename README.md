@@ -4,16 +4,19 @@
 
 ---
 
+## Important information:
 [![MetaOutput](https://www.metaoutput.net/_functions/watch?utm_source=github.com&utm_medium=referral&utm_campaign=view-on-github&utm_content=Preview-CPP&&source=GITHUB&size=128x128&project=Preview-CPP&url=https://github.com/viacheslav-lozinskyi/Preview-CPP)](https://www.metaoutput.net/)
 
-### This extension is working only with installed [MetaOutput](https://www.metaoutput.net/) extension!
+This extension is working only with installed [MetaOutput](https://www.metaoutput.net/) extension!
 
 ---
 
-### Now you can look inside [CPP](https://en.wikipedia.org/wiki/C++), [HPP](https://en.wikipedia.org/wiki/C++), [C](https://en.wikipedia.org/wiki/C++), [H](https://en.wikipedia.org/wiki/C++) file not opening it.
+## Description:
+Now you can look inside [CPP](https://en.wikipedia.org/wiki/C++), [HPP](https://en.wikipedia.org/wiki/C++), [C](https://en.wikipedia.org/wiki/C++), [H](https://en.wikipedia.org/wiki/C++) file not opening it.
 
 ---
 
+## How it works:
 ![Image](resource/video/Presentation1.gif)
 
 ---
