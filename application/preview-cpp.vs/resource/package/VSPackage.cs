@@ -24,6 +24,7 @@ namespace resource.package
         internal static class CONSTANT
         {
             public const string APPLICATION = "Visual Studio";
+            public const string COMPANY = "Nesviatypaskha Oleksii";
             public const string COPYRIGHT = "Copyright (c) 2020 by Nesviatypaskha Oleksii. All rights reserved.";
             public const string DESCRIPTION = "Quick preview of C, CPP, H and HPP files";
             public const string GUID = "42533993-FCE3-42E5-85C5-F339A242EF10";
